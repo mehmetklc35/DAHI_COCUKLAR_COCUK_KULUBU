@@ -1,42 +1,97 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-pink-100 flex items-center justify-center p-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl">
-        <div className="flex justify-center">
-          <img
-            src="/public/about-image.png"
-            alt="Hakkımızda"
-            className="rounded-xl shadow-xl hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-        <div className="flex flex-col justify-center">
-          <h1 className="text-5xl font-extrabold text-indigo-700 mb-6" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
-            Hakkımızda
-          </h1>
-          <p className="text-lg text-gray-700 mb-8" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
-          ÖZEL DAHİ ÇOCUKLAR ailesi olarak 2009 yılından itibaren uzman kadrosuyla 2-6 yaş arası tüm çocuklarımıza alternatif eğitim olanakları sunan, beceri ve yaratıcılıklarını özgürce sergileyebilecekleri hijyenik, eğlenceli, güvenli, öğrenme merkezli ve sevgi temelli bir ortamda özgüveni yüksek, sorumluluk sahibi bireyler yetiştirmeyi hedefliyoruz. 
+    <section className="bg-gradient-to-r from-blue-100 to-pink-100 py-16">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-30 items-center">
+          {/* Resim Alanı */}
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-3xl">
+              <img
+                src="https://png.pngtree.com/background/20220726/original/pngtree-chalkboard-with-science-formulas-picture-image_1823243.jpg"
+                alt="Hakkımızda"
+                className="w-full h-auto rounded-xl shadow-xl filter brightness-90 hover:brightness-110 hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out"
+              />
+            </div>
+          </div>
 
-Okulumuzda okul öncesi eğitim programı kapsamında uygulanan farklı eğitim ve öğretim methodları da vardır. 
+          {/* Metin Alanı */}
+          {/* Metin Alanı */}
+          <div className="flex flex-col justify-center space-y-6">
+            <span className="block text-pink-600 text-2xl font-semibold mb-2 animate-fade-in">
+              HER ÇOCUK BİR KEŞİF, HER KEŞİF BİR DAHİLİKLE BAŞLAR!
+            </span>
 
-Kendine Özgü Yaşayan Okul Modeli, Reggio, Emilia, Montessori, Waldorf, PYP, Orman Okulları gibi farklı ekollerin, güçlü ve okulumuzun kültürüne uygun yönlerinden yararlanılarak proje tabanlı eğitim modellerini harmanlayıp bütünleştirilmiş bir eğitim ve öğretim anlayışı sunulmuştur.
+            <h3
+              className="text-5xl font-extrabold text-indigo-700 mb-4 animate-slide-in"
+              style={{ fontFamily: "Comic Sans MS, cursive" }}
+            >
+              Biz Kimiz?
+            </h3>
 
+            <p
+              className="text-xl text-gray-800 leading-relaxed animate-fade-in"
+              style={{ fontFamily: "Comic Sans MS, cursive" }}
+            >
+              <strong>Dahi Çocuklar</strong> olarak, çocukların doğasında var
+              olan merak ve yaratıcılığı desteklemek için buradayız. 2009'dan bu
+              yana, 2-6 yaş arası çocuklara eğlenceli, güvenli ve ilham verici
+              bir öğrenme ortamı sunuyoruz. Amacımız, her çocuğun potansiyelini
+              en üst seviyeye çıkararak özgüveni yüksek, sorumluluk sahibi
+              bireyler yetiştirmek.
+            </p>
 
+            <p
+              className="text-xl text-gray-800 leading-relaxed animate-fade-in"
+              style={{ fontFamily: "Comic Sans MS, cursive" }}
+            >
+              Eğitim modelimizde <strong>Montessori</strong>,{" "}
+              <strong>Reggio Emilia</strong>,<strong> Waldorf</strong>,{" "}
+              <strong>PYP</strong> ve <strong>Orman Okulları</strong>
+              gibi dünya çapında kabul gören yaklaşımları harmanladık. Her
+              çocuğun öğrenme stiline uygun, proje tabanlı ve uygulamalı bir
+              öğretim anlayışı benimsiyoruz.
+            </p>
 
-OKUL SAATLERİ 
+            <h4 className="text-4xl font-bold text-indigo-700 mb-3 animate-slide-in">
+              📅 Okul Saatlerimiz
+            </h4>
 
-Tam Gün : 7.30 -18.30
+            <ul className="text-xl text-gray-700 space-y-2 animate-fade-in">
+              <li className="hover:scale-105 transition-transform duration-500">
+                <strong>Tam Gün:</strong> 07:30 - 18:30
+              </li>
+              <li className="hover:scale-105 transition-transform duration-500">
+                <strong>Yarım Gün (Sabah):</strong> 07:30 - 12:30
+              </li>
+              <li className="hover:scale-105 transition-transform duration-500">
+                <strong>Yarım Gün (Öğleden Sonra):</strong> 13:30 - 18:30
+              </li>
+            </ul>
 
-Yarım Gün Öğleden Önce : 7.30 - 12.30
+            <p
+              className="mt-4 text-xl text-gray-700 animate-fade-in"
+              style={{ fontFamily: "Comic Sans MS, cursive" }}
+            >
+              Her gün <strong>3 öğün besleyici yemek</strong> ile çocuklarımızın
+              fiziksel gelişimini destekliyoruz: Sabah Kahvaltısı, Öğle Yemeği
+              ve İkindi Kahvaltısı.
+            </p>
 
-Yarım Gün Öğleden Sonra : 13.30 - 18.30
-
-(Kurumumuzda Sabah Kahvaltısı - Öğle Yemeği ve İkindi Kahvaltısı olmak üzere 3 öğün hizmet verilmektedir.)
-          </p>
+            {/* Butonlar */}
+            <div className="mt-6 flex space-x-4 animate-slide-in">
+              <button className="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-800 transition-all">
+                Bize Katılın
+              </button>
+              <button className="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-800 transition-all">
+                Detaylı Bilgi Al
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

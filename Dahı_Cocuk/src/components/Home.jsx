@@ -44,7 +44,10 @@ const FloatingObjects = () => {
             opacity: 0.6,
             transform: "translate(-50%, -50%)",
             borderRadius: obj.type === "circle" ? "50%" : "0%",
-            clipPath: obj.type === "star" ? "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)" : "none",
+            clipPath:
+              obj.type === "star"
+                ? "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"
+                : "none",
           }}
         ></div>
       ))}
@@ -54,33 +57,45 @@ const FloatingObjects = () => {
 
 const Home = () => {
   return (
-    <div
-      className="relative min-h-screen bg-cover bg-center flex items-center justify-center p-6"
-      style={{ backgroundImage: 'url(/A_playful,_vibrant_background_image_designed_for_c.png)', opacity: 0.9 }}
-    >
+    <div className="relative min-h-screen bg-cover bg-left flex items-center justify-center p-6 overflow-hidden ">
       <FloatingObjects />
-      <main className="flex flex-row items-center justify-between w-full max-w-6xl">
+      <main className="flex flex-row items-center gap-8">
         <div className="w-1/2">
-          <h1 className="text-5xl font-extrabold text-indigo-700 mb-6 animate-bounce" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
+          <h1
+            className="text-7xl font-extrabold text-fuchsia-700 mb-10 animate-bounce"
+            style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
+          >
             Dahi Çocuklar Çocuk Kulübü'ne Hoş Geldiniz!
           </h1>
-          <p className="text-xl text-gray-700 mb-8" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
-            Burada çocuklar eğlenirken öğrenir, yeni arkadaşlıklar kurar ve yaratıcılıklarını geliştirirler. Etkinliklerimizle dolu, neşeli bir dünyaya adım atın!
+          <p
+            className="text-4xl text-slate-700 mb-20"
+            style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
+          >
+            Burada çocuklar eğlenirken öğrenir, yeni arkadaşlıklar kurar ve
+            yaratıcılıklarını geliştirirler. Etkinliklerimizle dolu, neşeli bir
+            dünyaya adım atın!
           </p>
-          <div className="flex space-x-4">
-            <button className="bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-indigo-800 transition-all" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
+          <div className="flex space-x-8">
+            <button
+              className="bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-indigo-800 transition-all"
+              style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
+            >
               İletişime Geç
             </button>
-            <button className="bg-pink-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-pink-800 transition-all" style={{ fontFamily: 'Comic Sans MS, cursive, sans-serif' }}>
+            <button
+              className="bg-pink-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-pink-800 transition-all"
+              style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
+            >
               Hakkımızda
             </button>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
+        <div className="w-1/2">
           <img
-            src="/A_playful,_vibrant_background_image_designed_for_c.png"
+            src="https://www.dahicocuklar.com.tr//panel/uploads/slides_v/1920x1080/snapseed-2.jpg"
             alt="Dahi Çocuklar"
-            className="rounded-xl shadow-xl hover:scale-105 transition-transform duration-500"
+            className="rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700 ease-in-out border-4 border-white"
+            style={{ filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3))" }}
           />
         </div>
       </main>
