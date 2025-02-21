@@ -92,7 +92,7 @@ const Home = () => {
         </div>
         <div className="w-1/2">
           <img
-            src="https://www.dahicocuklar.com.tr//panel/uploads/slides_v/1920x1080/snapseed-2.jpg"
+            src="https://www.artistanbul.io/wp-content/uploads/2016/10/3b_blog.jpg"
             alt="Dahi Çocuklar"
             className="rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700 ease-in-out border-4 border-white"
             style={{ filter: "drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3))" }}
