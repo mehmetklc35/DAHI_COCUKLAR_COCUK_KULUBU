@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Service from "./components/Service";
 import Team from "./components/Team";
-import WhyUs from "./components/WhyUS";
+import WhyUs from "./components/WhyUs";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 
