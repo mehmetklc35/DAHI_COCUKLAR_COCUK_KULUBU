@@ -4,8 +4,7 @@ const About = () => {
   return (
     <section className="bg-gradient-to-r from-blue-100 to-pink-100 py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-30 items-center">
-          {/* Resim Alanı */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center">
             <div className="relative w-full max-w-3xl">
               <img
@@ -16,22 +15,20 @@ const About = () => {
             </div>
           </div>
 
-          {/* Metin Alanı */}
-          {/* Metin Alanı */}
           <div className="flex flex-col justify-center space-y-6">
-            <span className="block text-pink-600 text-2xl font-semibold mb-2 animate-fade-in">
+            <span className="block text-pink-600 text-xl sm:text-2xl font-semibold mb-2 animate-fade-in">
               HER ÇOCUK BİR KEŞİF, HER KEŞİF BİR DAHİLİKLE BAŞLAR!
             </span>
 
             <h3
-              className="text-5xl font-extrabold text-indigo-700 mb-4 animate-slide-in"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-700 mb-4 animate-slide-in"
               style={{ fontFamily: "Comic Sans MS, cursive" }}
             >
               Biz Kimiz?
             </h3>
 
             <p
-              className="text-xl text-gray-800 leading-relaxed animate-fade-in"
+              className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed animate-fade-in"
               style={{ fontFamily: "Comic Sans MS, cursive" }}
             >
               <strong>Dahi Çocuklar</strong> olarak, çocukların doğasında var
@@ -43,22 +40,22 @@ const About = () => {
             </p>
 
             <p
-              className="text-xl text-gray-800 leading-relaxed animate-fade-in"
+              className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed animate-fade-in"
               style={{ fontFamily: "Comic Sans MS, cursive" }}
             >
               Eğitim modelimizde <strong>Montessori</strong>,{" "}
-              <strong>Reggio Emilia</strong>,<strong> Waldorf</strong>,{" "}
-              <strong>PYP</strong> ve <strong>Orman Okulları</strong>
-              gibi dünya çapında kabul gören yaklaşımları harmanladık. Her
+              <strong>Reggio Emilia</strong>, <strong>Waldorf</strong>,{" "}
+              <strong>PYP</strong> ve <strong>Orman Okulları</strong> gibi
+              dünya çapında kabul gören yaklaşımları harmanladık. Her
               çocuğun öğrenme stiline uygun, proje tabanlı ve uygulamalı bir
               öğretim anlayışı benimsiyoruz.
             </p>
 
-            <h4 className="text-4xl font-bold text-indigo-700 mb-3 animate-slide-in">
+            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-indigo-700 mb-3 animate-slide-in">
               📅 Okul Saatlerimiz
             </h4>
 
-            <ul className="text-xl text-gray-700 space-y-2 animate-fade-in">
+            <ul className="text-base sm:text-lg md:text-xl text-gray-700 space-y-2 animate-fade-in">
               <li className="hover:scale-105 transition-transform duration-500">
                 <strong>Tam Gün:</strong> 07:30 - 18:30
               </li>
@@ -71,7 +68,7 @@ const About = () => {
             </ul>
 
             <p
-              className="mt-4 text-xl text-gray-700 animate-fade-in"
+              className="mt-4 text-base sm:text-lg md:text-xl text-gray-700 animate-fade-in"
               style={{ fontFamily: "Comic Sans MS, cursive" }}
             >
               Her gün <strong>3 öğün besleyici yemek</strong> ile çocuklarımızın

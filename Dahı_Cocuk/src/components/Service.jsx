@@ -48,10 +48,8 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-pink-100 p-10 relative">
-      {/* Hareketli Arka Plan Deseni */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-stripes.png')] opacity-10"></div>
 
-      {/* Başlık */}
       <h1
         className="text-6xl font-extrabold text-indigo-700 mb-12 text-center animate-fade-in"
         style={{ fontFamily: "Comic Sans MS, cursive" }}
@@ -59,14 +57,12 @@ const Services = () => {
         Hizmetlerimiz
       </h1>
 
-      {/* Kartlar */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto relative z-10">
         {services.map((service) => (
           <div
             key={service.id}
             className="relative bg-white rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 hover:scale-105 hover:rotate-1"
           >
-            {/* Resim */}
             <div className="relative h-56 overflow-hidden">
               <img
                 src={service.image}
@@ -76,7 +72,6 @@ const Services = () => {
               <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
             </div>
 
-            {/* İçerik */}
             <div className="p-6">
               <h2
                 className="text-3xl font-bold text-indigo-600 mb-3 transition-colors duration-500 hover:text-pink-500"
@@ -91,7 +86,6 @@ const Services = () => {
                 {service.description}
               </p>
 
-              {/* Buton */}
               <button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-indigo-800 hover:scale-110 transition-all animate-bounce-once">
                 Detaylı İncele
               </button>
@@ -100,7 +94,6 @@ const Services = () => {
         ))}
       </div>
 
-      {/* Alt Yazı */}
       <div className="mt-16 text-center animate-fade-in">
         <p className="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-pink-500 to-purple-600 text-transparent bg-clip-text animate-pulse">
           Her atölyemiz, çocukların gelişimini desteklemek ve eğlenerek
