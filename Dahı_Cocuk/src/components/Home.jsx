@@ -62,13 +62,13 @@ const Home = () => {
       <main className="flex flex-row items-center gap-8">
         <div className="w-1/2">
           <h1
-            className="text-7xl font-extrabold text-fuchsia-700 mb-10 animate-bounce"
+            className="text-5xl font-extrabold text-fuchsia-700 mb-10 animate-bounce"
             style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
           >
             Dahi Çocuklar Çocuk Kulübü'ne Hoş Geldiniz!
           </h1>
           <p
-            className="text-4xl text-slate-700 mb-20"
+            className="text-2xl text-slate-700 mb-20"
             style={{ fontFamily: "Comic Sans MS, cursive, sans-serif" }}
           >
             Burada çocuklar eğlenirken öğrenir, yeni arkadaşlıklar kurar ve
